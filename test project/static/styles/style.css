@@ -1,0 +1,11 @@
+.content {
+    display: flex;
+    align-items: center;
+    
+}
+.content > p {
+    width: 150px;
+}
+button {
+    height: 25px;
+}

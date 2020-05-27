@@ -1,0 +1,5 @@
+Flask
+Flask-session
+request
+sqlalchemy
+psycopg2-binary
