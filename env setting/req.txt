@@ -1,5 +1,5 @@
 Flask
-Flask-session
-request
-sqlalchemy
+Flask-Session
 psycopg2-binary
+SQLAlchemy
+request

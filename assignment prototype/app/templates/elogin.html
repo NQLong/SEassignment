@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elogin</title>
+</head>
+<body>
+    <form action="{{url_for('elogin')}}" method = "post" style="display: flex; flex-direction: column;">
+        <input type="text" name="ename" placeholder="your usename">
+        <input type="password" name="epassword" placeholder="your password">
+        <button>login</button>
+    </form>
+</body>
+</html>

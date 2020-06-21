@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Queue</title>
+    <link rel="stylesheet" href="/static/styles/newstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Modak&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="red-background">
+        <div class="logo-container">
+            <img src="/static/logo.png" alt="logo">
+            <h1 class = "logo">SMFC</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link">Orders</a></li>
+                <li><a href="#" class="nav-link">Menu</a></li>
+                <li><a href="#" class="nav-link">sign-out</a></li>
+                <li><a href="#" class="nav-link">Your account</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+       <table>
+           <col width>
+           <tr>
+                <th></th>
+                <th>OrderID</th>
+                <th>CustommerID</th>
+                <th>Created</th>
+                <th>Status</th>
+                <th>Price</th>
+           </tr>
+           {% for order in orderlist%}
+           <tr>
+                <td></td>
+                <td>{{order.Oid}}</td>
+                <td>{{order.Uid}}</td>
+                <td>{{order.Uid}}</td>
+                <td>{{order.Ostat}}</td>
+                <td>{{order.Oprice}}$</td>
+                <td><button>Ready</button></td>
+                <td><button>Refuse</button></td>
+           </tr>
+           {%endfor%}
+       </table>
+    </main>
+</body>
+</html>
